@@ -8,39 +8,42 @@ public class Guerreiro extends Personagem {
 
 	public Guerreiro(String nome, int nivel, String tipoArma, int forca, int defesa) {
 		super(nome, nivel, 25, 12);
-
+		// Guerreiro tem atributo padrao na craiação. vida 25 ataque 12
     }
 
 	public String getTipoArma() {
-		return null;
+		return this.tipoArma;
 	}
 
 	public int getForca() {
-		return 0;
+		return this.forca;
 	}
 
 	public int getDefesa() {
-		return 0;
+		return this.defesa;
 	}
-
+	@Override
 	public String getTipo() {
-		return null;
+		return "Guerreiro";
 	}
-
+	@Override
 	public String getDadosEspecificos() {
-		return null;
+		return toString() + ", Tipo " + getTipo() +
+				", Tipo de arma: " + getTipoArma() +
+				", Força: " + getForca() +
+				", Defesa: " + getDefesa();
 	}
 
 	public void setTipoArma(String tipoArma) {
-
+		this.tipoArma = tipoArma;
 	}
 
 	public void setForca(int forca) {
-
+		this.forca = forca;
 	}
 
 	public void setDefesa(int defesa) {
-
+		this.defesa = defesa;
 	}
 
 }

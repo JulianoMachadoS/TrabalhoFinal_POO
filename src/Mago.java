@@ -8,38 +8,43 @@ public class Mago extends Personagem {
 
 	public Mago(String nome, int nivel, ElementoMagico elemento, int mana, int poderMagico) {
 		super(nome, nivel, 10, 18);
+		// Mago tem atributo padrao na craiação. vida 10 ataque 18
+
 	}
 
 	public ElementoMagico getElemento() {
-		return null;
+		return this.elemento;
 	}
 
 	public int getMana() {
-		return 0;
+		return this.mana;
 	}
 
 	public int getPoderMagico() {
-		return 0;
+		return this.poderMagico;
 	}
-
+	@Override
 	public String getTipo() {
-		return null;
+		return "Mago";
 	}
 
 	public String getDadosEspecificos() {
-		return null;
+		return toString() +
+				", Elemento magico: " + getElemento() +
+				", Mana: " + getMana() +
+				", Poder magico: " + getPoderMagico();
 	}
 
 	public void setElemento(ElementoMagico elemento) {
-
+		this.elemento = elemento;
 	}
 
 	public void setMana(int mana) {
-
+		this.mana = mana;
 	}
 
 	public void setPoderMagico(int poderMagico) {
-
+		this.poderMagico = poderMagico;
 	}
 
 }

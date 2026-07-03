@@ -9,23 +9,26 @@ public abstract class Personagem {
 	private int ataque;
 
 	public Personagem(String nome, int nivel, int vida, int ataque) {
-
+		this.nome = nome;
+		this.nivel = nivel;
+		this.vida = vida;
+		this.ataque = ataque;
 	}
 
 	public String getNome() {
-		return null;
+		return this.nome;
 	}
 
 	public int getNivel() {
-		return 0;
+		return this.nivel;
 	}
 
 	public int getVida() {
-		return 0;
+		return this.vida;
 	}
 
 	public int getAtaque() {
-		return 0;
+		return this.ataque;
 	}
 
 	public abstract String getDadosEspecificos();
@@ -33,23 +36,26 @@ public abstract class Personagem {
 	public abstract String getTipo();
 
 	public void setNome(String nome) {
-
+		this.nome = nome;
 	}
 
-	public void setNivel(int nivele) {
-
+	public void setNivel(int nivel) {
+		this.nivel = nivel;
 	}
 
 	public void setVida(int vida) {
-
+		this.vida = vida;
 	}
 
 	public void setAtaque(int novoAtaque) {
-
+		this.ataque = ataque;
 	}
 
 	public String toString() {
-		return null;
+		return "Nome: " + getNome() +
+				", vida: " + getVida() +
+				", Ataque: " + getAtaque() +
+				", Nível: " + getNivel();
 	}
 
 }
