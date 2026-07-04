@@ -9,15 +9,16 @@ public class GerenciadorPersonagens {
 	}
 
 	public void carregarDadosIniciais() {
+		// coloca os primeiros personagens
 
 	}
 
-	public void cadastrarGuerreiro(String nome, int nivel, String tipoArma, int forca, int defesa) {
-
+	public void cadastrarGuerreiro(String nome, int nivel, Armas tipoArma, int forca, int defesa) {
+		personagens.add(new Guerreiro(nome,nivel,tipoArma, forca, defesa));
 	}
 
 	public void cadastrarMago(String nome, int nivel, ElementoMagico elemento, int mana, int poderMagico) {
-
+		personagens.add(new Mago(nome, nivel, elemento, mana, poderMagico ));
 	}
 
 	public ArrayList<Personagem> listarTodos() {
@@ -25,7 +26,15 @@ public class GerenciadorPersonagens {
 	}
 
 	public ArrayList<Personagem> buscarPorNome(String nome) {
-		return null;
+		// pega todos os nomes que possuem determinado conjunto de caracteres e retorna uma lista com eles
+		ArrayList<Personagem> resultado = new ArrayList<>();
+		String filtro = nome.toLowerCase();
+
+		 personagens.stream()
+				.filter(p -> p.getNome().toLowerCase().contains(filtro))
+				.forEach(p -> resultado.add(p));
+
+		return resultado;
 	}
 
 	public boolean removerPorNome(String nome) {

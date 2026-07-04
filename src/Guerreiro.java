@@ -1,17 +1,17 @@
 public class Guerreiro extends Personagem {
 
-	private String tipoArma;
+	private Armas tipoArma;
 
 	private int forca;
 
 	private int defesa;
 
-	public Guerreiro(String nome, int nivel, String tipoArma, int forca, int defesa) {
+	public Guerreiro(String nome, int nivel, Armas tipoArma, int forca, int defesa) {
 		super(nome, nivel, 25, 12);
 		// Guerreiro tem atributo padrao na craiação. vida 25 ataque 12
     }
 
-	public String getTipoArma() {
+	public Armas getTipoArma() {
 		return this.tipoArma;
 	}
 
@@ -34,7 +34,7 @@ public class Guerreiro extends Personagem {
 				", Defesa: " + getDefesa();
 	}
 
-	public void setTipoArma(String tipoArma) {
+	public void setTipoArma(Armas tipoArma) {
 		this.tipoArma = tipoArma;
 	}
 

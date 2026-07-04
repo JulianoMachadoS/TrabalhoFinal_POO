@@ -48,7 +48,7 @@ public abstract class Personagem {
 	}
 
 	public void setAtaque(int novoAtaque) {
-		this.ataque = ataque;
+		this.ataque = novoAtaque;
 	}
 
 	public String toString() {
