@@ -7,9 +7,25 @@ public class Mago extends Personagem {
 	private int poderMagico;
 
 	public Mago(String nome, int nivel, ElementoMagico elemento, int mana, int poderMagico) {
-		super(nome, nivel, 10, 18);
+		super(nome, nivel);
+		this.elemento = elemento;
+		this.mana = mana;
+		this.poderMagico = poderMagico;
 		// Mago tem atributo padrao na craiação. vida 10 ataque 18
+		calcularAtributos(nivel);
 
+	}
+	@Override
+	public void calcularAtributos(int nivel) {
+		int vidaBase = 10;
+		int ataqueBase = 18;
+
+		// O calculo da progressão usando o nivel da propria classe
+		int vidaCalculada = (int) (vidaBase + 12 * Math.pow(nivel - 1, 1.1));
+		int ataqueCalculado = (int) (ataqueBase + 4 * Math.pow(nivel - 1, 1.3));
+
+		this.setVida(vidaCalculada);
+		this.setAtaque(ataqueCalculado);
 	}
 
 	public ElementoMagico getElemento() {
@@ -29,8 +45,7 @@ public class Mago extends Personagem {
 	}
 
 	public String getDadosEspecificos() {
-		return toString() +
-				", Elemento magico: " + getElemento() +
+		return ", Elemento magico: " + getElemento() +
 				", Mana: " + getMana() +
 				", Poder magico: " + getPoderMagico();
 	}

@@ -8,11 +8,9 @@ public abstract class Personagem {
 
 	private int ataque;
 
-	public Personagem(String nome, int nivel, int vida, int ataque) {
+	public Personagem(String nome, int nivel) {
 		this.nome = nome;
 		this.nivel = nivel;
-		this.vida = vida;
-		this.ataque = ataque;
 	}
 
 	public String getNome() {
@@ -31,6 +29,10 @@ public abstract class Personagem {
 		return this.ataque;
 	}
 
+	// calcula atributos serve pra calcular os atributos particulares de cada classe com base no nivel.
+	// Atributo = nivel + (Multiplicador x (Nivel - 1)^{Curva} )
+	public abstract void calcularAtributos(int nivel);
+
 	public abstract String getDadosEspecificos();
 
 	public abstract String getTipo();
@@ -41,6 +43,7 @@ public abstract class Personagem {
 
 	public void setNivel(int nivel) {
 		this.nivel = nivel;
+		calcularAtributos(nivel);
 	}
 
 	public void setVida(int vida) {
