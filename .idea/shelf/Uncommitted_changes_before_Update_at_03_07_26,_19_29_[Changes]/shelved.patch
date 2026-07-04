@@ -1,0 +1,219 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"054c2dc5-048a-417c-bba1-895199f3e0a0\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"McpProjectServerCommands\">\n    <commands />\n    <urls />\n  </component>\n  <component name=\"NextEditCompletionFeaturesState\">\n    <decayedCancelled>\n      <entry key=\"MS100\" value=\"1.000000003840568\" />\n      <entry key=\"MS500\" value=\"1.046751632059305\" />\n      <entry key=\"S2\" value=\"2.2224415109841518\" />\n      <entry key=\"S5\" value=\"4.23130538729877\" />\n      <entry key=\"S10\" value=\"6.55906754702352\" />\n      <entry key=\"S30\" value=\"11.202002771471657\" />\n      <entry key=\"S60\" value=\"13.584486804226644\" />\n      <entry key=\"M2\" value=\"15.133853003061002\" />\n      <entry key=\"M5\" value=\"16.210944991844336\" />\n      <entry key=\"M10\" value=\"16.597949578974962\" />\n      <entry key=\"M15\" value=\"16.730261627355077\" />\n      <entry key=\"M30\" value=\"16.864270021018392\" />\n      <entry key=\"H1\" value=\"16.931918219234944\" />\n      <entry key=\"H2\" value=\"16.965904711282253\" />\n      <entry key=\"H4\" value=\"16.982938730906092\" />\n      <entry key=\"D1\" value=\"16.997154560687918\" />\n      <entry key=\"W1\" value=\"16.999593462246775\" />\n    </decayedCancelled>\n    <decayedSelected>\n      <entry key=\"MS100\" value=\"0.0\" />\n      <entry key=\"MS500\" value=\"0.0\" />\n      <entry key=\"S2\" value=\"0.0\" />\n      <entry key=\"S5\" value=\"0.0\" />\n      <entry key=\"S10\" value=\"0.0\" />\n      <entry key=\"S30\" value=\"0.0\" />\n      <entry key=\"S60\" value=\"0.0\" />\n      <entry key=\"M2\" value=\"0.0\" />\n      <entry key=\"M5\" value=\"0.0\" />\n      <entry key=\"M10\" value=\"0.0\" />\n      <entry key=\"M15\" value=\"0.0\" />\n      <entry key=\"M30\" value=\"0.0\" />\n      <entry key=\"H1\" value=\"0.0\" />\n      <entry key=\"H2\" value=\"0.0\" />\n      <entry key=\"H4\" value=\"0.0\" />\n      <entry key=\"D1\" value=\"0.0\" />\n      <entry key=\"W1\" value=\"0.0\" />\n    </decayedSelected>\n    <decayedShown>\n      <entry key=\"MS100\" value=\"0.4897101501708315\" />\n      <entry key=\"MS500\" value=\"0.898574382953642\" />\n      <entry key=\"S2\" value=\"2.039174001030356\" />\n      <entry key=\"S5\" value=\"4.023394290621674\" />\n      <entry key=\"S10\" value=\"6.349667216726828\" />\n      <entry key=\"S30\" value=\"11.038283192923927\" />\n      <entry key=\"S60\" value=\"13.475074113673138\" />\n      <entry key=\"M2\" value=\"15.069812617299217\" />\n      <entry key=\"M5\" value=\"16.18267848871018\" />\n      <entry key=\"M10\" value=\"16.583335362940062\" />\n      <entry key=\"M15\" value=\"16.72040882728088\" />\n      <entry key=\"M30\" value=\"16.85928782866329\" />\n      <entry key=\"H1\" value=\"16.92941302345491\" />\n      <entry key=\"H2\" value=\"16.964648569377093\" />\n      <entry key=\"H4\" value=\"16.98230977154943\" />\n      <entry key=\"D1\" value=\"16.997049610534777\" />\n      <entry key=\"W1\" value=\"16.999578466338303\" />\n    </decayedShown>\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;customColor&quot;: &quot;&quot;,\n  &quot;associatedIndex&quot;: 5\n}</component>\n  <component name=\"ProjectId\" id=\"3G0Ny6XfFaZaJH9MysT0GEApuhM\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,\n    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,\n    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\n    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\Juliano Machado\\OneDrive - PUCRS - BR\\POO\\TrabalhoFinal_POO\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95\" />\n        <option value=\"bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"054c2dc5-048a-417c-bba1-895199f3e0a0\" name=\"Changes\" comment=\"\" />\n      <created>1783104778742</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1783104778742</updated>\n      <workItem from=\"1783104780439\" duration=\"788000\" />\n      <workItem from=\"1783105591744\" duration=\"1730000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 21f85cc992589db3ba4c8551fa62e3939eefda25)
++++ b/.idea/workspace.xml	(date 1783110824427)
+@@ -5,8 +5,25 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="054c2dc5-048a-417c-bba1-895199f3e0a0" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/docs/DiagramaDeClasses_4.asta" beforeDir="false" afterPath="$PROJECT_DIR$/docs/DiagramaDeClasses_4.asta" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/docs/DiagramaDeClasses_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/DiagramaDeClasses_4.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/ElementoMagico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElementoMagico.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/GerenciadorPersonagens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GerenciadorPersonagens.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Guerreiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Guerreiro.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/JanelaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JanelaPrincipal.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Mago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mago.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Personagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personagem.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/TelaCadastro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TelaCadastro.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/TelaDestaques.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TelaDestaques.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/TelaEstatisticas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TelaEstatisticas.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/TelaListagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TelaListagem.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -22,23 +39,23 @@
+   </component>
+   <component name="NextEditCompletionFeaturesState">
+     <decayedCancelled>
+-      <entry key="MS100" value="1.000000003840568" />
+-      <entry key="MS500" value="1.046751632059305" />
+-      <entry key="S2" value="2.2224415109841518" />
+-      <entry key="S5" value="4.23130538729877" />
+-      <entry key="S10" value="6.55906754702352" />
+-      <entry key="S30" value="11.202002771471657" />
+-      <entry key="S60" value="13.584486804226644" />
+-      <entry key="M2" value="15.133853003061002" />
+-      <entry key="M5" value="16.210944991844336" />
+-      <entry key="M10" value="16.597949578974962" />
+-      <entry key="M15" value="16.730261627355077" />
+-      <entry key="M30" value="16.864270021018392" />
+-      <entry key="H1" value="16.931918219234944" />
+-      <entry key="H2" value="16.965904711282253" />
+-      <entry key="H4" value="16.982938730906092" />
+-      <entry key="D1" value="16.997154560687918" />
+-      <entry key="W1" value="16.999593462246775" />
++      <entry key="MS100" value="1.0" />
++      <entry key="MS500" value="1.00000024702986" />
++      <entry key="S2" value="1.0324075999921407" />
++      <entry key="S5" value="1.543453724329746" />
++      <entry key="S10" value="2.841343884716551" />
++      <entry key="S30" value="8.2417062104664" />
++      <entry key="S60" value="14.626711177059176" />
++      <entry key="M2" value="21.28113498618753" />
++      <entry key="M5" value="27.483421497619986" />
++      <entry key="M10" value="30.334606671609535" />
++      <entry key="M15" value="32.05592112116257" />
++      <entry key="M30" value="36.198629732418766" />
++      <entry key="H1" value="40.950332379336224" />
++      <entry key="H2" value="44.73684743896169" />
++      <entry key="H4" value="47.15039354700258" />
++      <entry key="D1" value="49.49144360809731" />
++      <entry key="W1" value="49.92647828445491" />
+     </decayedCancelled>
+     <decayedSelected>
+       <entry key="MS100" value="0.0" />
+@@ -60,23 +77,23 @@
+       <entry key="W1" value="0.0" />
+     </decayedSelected>
+     <decayedShown>
+-      <entry key="MS100" value="0.4897101501708315" />
+-      <entry key="MS500" value="0.898574382953642" />
+-      <entry key="S2" value="2.039174001030356" />
+-      <entry key="S5" value="4.023394290621674" />
+-      <entry key="S10" value="6.349667216726828" />
+-      <entry key="S30" value="11.038283192923927" />
+-      <entry key="S60" value="13.475074113673138" />
+-      <entry key="M2" value="15.069812617299217" />
+-      <entry key="M5" value="16.18267848871018" />
+-      <entry key="M10" value="16.583335362940062" />
+-      <entry key="M15" value="16.72040882728088" />
+-      <entry key="M30" value="16.85928782866329" />
+-      <entry key="H1" value="16.92941302345491" />
+-      <entry key="H2" value="16.964648569377093" />
+-      <entry key="H4" value="16.98230977154943" />
+-      <entry key="D1" value="16.997049610534777" />
+-      <entry key="W1" value="16.999578466338303" />
++      <entry key="MS100" value="2.1539627916104033E-14" />
++      <entry key="MS500" value="0.0018478066858764472" />
++      <entry key="S2" value="0.2268315579897655" />
++      <entry key="S5" value="0.9688318534155045" />
++      <entry key="S10" value="2.375149524197772" />
++      <entry key="S30" value="7.875569462143008" />
++      <entry key="S60" value="14.31867092099268" />
++      <entry key="M2" value="21.060182165931895" />
++      <entry key="M5" value="27.369595502614544" />
++      <entry key="M10" value="30.272083920471747" />
++      <entry key="M15" value="32.012476993262176" />
++      <entry key="M30" value="36.17529320287021" />
++      <entry key="H1" value="40.937859565158575" />
++      <entry key="H2" value="44.73030465164612" />
++      <entry key="H4" value="47.14702615692433" />
++      <entry key="D1" value="49.490866994146224" />
++      <entry key="W1" value="49.92639550439276" />
+     </decayedShown>
+   </component>
+   <component name="ProjectColorInfo">{
+@@ -100,6 +117,7 @@
+     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/Juliano Machado/OneDrive - PUCRS - BR/POO/TrabalhoFinal_POO/docs&quot;,
+     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+@@ -113,6 +131,9 @@
+   }
+ }</component>
+   <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\Juliano Machado\OneDrive - PUCRS - BR\POO\TrabalhoFinal_POO\docs" />
++    </key>
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\Juliano Machado\OneDrive - PUCRS - BR\POO\TrabalhoFinal_POO" />
+     </key>
+@@ -133,11 +154,22 @@
+       <option name="presentableId" value="Default" />
+       <updated>1783104778742</updated>
+       <workItem from="1783104780439" duration="788000" />
+-      <workItem from="1783105591744" duration="1730000" />
++      <workItem from="1783105591744" duration="3213000" />
+     </task>
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/Personagem.java</url>
++          <line>22</line>
++          <option name="timeStamp" value="1" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
++  </component>
+ </project>
+\ No newline at end of file
+Index: src/Personagem.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public abstract class Personagem {\n\n\tprivate String nome;\n\n\tprivate int nivel;\n\n\tprivate int vida;\n\n\tprivate int ataque;\n\n\tpublic Personagem(String nome, int nivel, int vida, int ataque) {\n\n\t}\n\n\tpublic String getNome() {\n\t\treturn null;\n\t}\n\n\tpublic int getNivel() {\n\t\treturn 0;\n\t}\n\n\tpublic int getVida() {\n\t\treturn 0;\n\t}\n\n\tpublic int getAtaque() {\n\t\treturn 0;\n\t}\n\n\tpublic abstract String getDadosEspecificos();\n\n\tpublic abstract String getTipo();\n\n\tpublic void setNome(String nome) {\n\n\t}\n\n\tpublic void setNivel(int nivele) {\n\n\t}\n\n\tpublic void setVida(int vida) {\n\n\t}\n\n\tpublic void setAtaque(int novoAtaque) {\n\n\t}\n\n\tpublic String toString() {\n\t\treturn null;\n\t}\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Personagem.java b/src/Personagem.java
+--- a/src/Personagem.java	(revision 21f85cc992589db3ba4c8551fa62e3939eefda25)
++++ b/src/Personagem.java	(date 1783109726000)
+@@ -9,23 +9,26 @@
+ 	private int ataque;
+ 
+ 	public Personagem(String nome, int nivel, int vida, int ataque) {
+-
++		this.nome = nome;
++		this.nivel = nivel;
++		this.vida = vida;
++		this.ataque = ataque;
+ 	}
+ 
+ 	public String getNome() {
+-		return null;
++		return this.nome;
+ 	}
+ 
+ 	public int getNivel() {
+-		return 0;
++		return this.nivel;
+ 	}
+ 
+ 	public int getVida() {
+-		return 0;
++		return this.vida;
+ 	}
+ 
+ 	public int getAtaque() {
+-		return 0;
++		return this.ataque;
+ 	}
+ 
+ 	public abstract String getDadosEspecificos();
+@@ -33,11 +36,11 @@
+ 	public abstract String getTipo();
+ 
+ 	public void setNome(String nome) {
+-
++		this.nome = nome;
+ 	}
+ 
+-	public void setNivel(int nivele) {
+-
++	public void setNivel(int nivel) {
++		this.nivel = nivel;
+ 	}
+ 
+ 	public void setVida(int vida) {
