@@ -3,6 +3,10 @@ import javax.swing.JTabbedPane;
 import javax.swing.WindowConstants;
 import java.awt.BorderLayout;
 
+//ferramentas para pegar o tamanho da tela
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 public class JanelaPrincipal extends JFrame {
 
 	private GerenciadorPersonagens gerenciador;
@@ -24,8 +28,14 @@ public class JanelaPrincipal extends JFrame {
 
 	private void configurarJanela() {
 		setTitle("Gerenciador de Personagens");
-		setSize(820, 560);
-		setLocationRelativeTo(null);
+
+		Dimension tamanhoTela = Toolkit.getDefaultToolkit().getScreenSize(); // pega as dimençoes da tela
+
+		int largura = (int) (tamanhoTela.width * 0.9);
+		int altura = (int) (tamanhoTela.height * 0.9);
+
+		setSize(largura, altura);
+		setLocationRelativeTo(null); // centraliza janela
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		setLayout(new BorderLayout());
 	}

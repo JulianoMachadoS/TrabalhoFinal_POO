@@ -34,12 +34,13 @@ public class GerenciadorPersonagens {
 	}
 
 	public ArrayList<Personagem> buscarPorNome(String nome) {
+		// pega todos os nomes que possuem determinado conjunto de caracteres e retorna uma lista com eles
 		ArrayList<Personagem> resultado = new ArrayList<>();
 		String filtro = nome.toLowerCase();
 
 		personagens.stream()
 				.filter(p -> p.getNome().toLowerCase().contains(filtro))
-				.forEach(resultado::add);
+				.forEach(p -> resultado.add(p));
 
 		return resultado;
 	}
