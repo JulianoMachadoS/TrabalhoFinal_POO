@@ -10,6 +10,12 @@ public enum Armas {
 
     LANCA,
 
-    PORRETE;
+    PORRETE,
+
+    ARCO,
+
+    CAJADO,
+
+    ESCUDO;
 
 }
