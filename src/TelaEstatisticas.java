@@ -1,3 +1,7 @@
-public class TelaEstatisticas {
+public class TelaEstatisticas implements Atualizavel{
 
+    @Override
+    public void atualizar() {
+
+    }
 }

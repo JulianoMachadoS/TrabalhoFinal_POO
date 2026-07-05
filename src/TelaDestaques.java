@@ -2,7 +2,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import java.awt.GridLayout;
 
-public class TelaDestaques extends JPanel {
+public class TelaDestaques extends JPanel implements Atualizavel {
 
 	private GerenciadorPersonagens gerenciador;
 	private JLabel maiorNivelLabel;
@@ -29,11 +29,47 @@ public class TelaDestaques extends JPanel {
 		return label;
 	}
 
+	@Override
 	public void atualizar() {
-		maiorNivelLabel.setText("Personagem com maior nivel: " + formatar(gerenciador.personagemMaiorNivel()));
-		maiorAtaqueLabel.setText("Personagem com maior ataque: " + formatar(gerenciador.personagemMaiorAtaque()));
-		maiorDefesaLabel.setText("Guerreiro com maior defesa: " + formatar(gerenciador.guerreiroMaiorDefesa()));
-		maiorPoderMagicoLabel.setText("Mago com maior poder magico: " + formatar(gerenciador.magoMaiorPoderMagico()));
+		Personagem maiorNivel = gerenciador.personagemMaiorNivel();
+
+		if (maiorNivel == null) {
+			maiorNivelLabel.setText("Personagem com maior nivel: Nenhum");
+		} else {
+			maiorNivelLabel.setText("Personagem com maior nivel: " +
+					maiorNivel.getNome() +
+					" | Nivel: " + maiorNivel.getNivel());
+		}
+
+		Personagem maiorAtaque = gerenciador.personagemMaiorAtaque();
+
+		if (maiorAtaque == null) {
+			maiorAtaqueLabel.setText("Personagem com maior ataque: Nenhum");
+		} else {
+			maiorAtaqueLabel.setText("Personagem com maior ataque: " +
+					maiorAtaque.getNome() +
+					" | Ataque: " + maiorAtaque.getAtaque());
+		}
+
+		Guerreiro maiorDefesa = gerenciador.guerreiroMaiorDefesa();
+
+		if (maiorDefesa == null) {
+			maiorDefesaLabel.setText("Guerreiro com maior defesa: Nenhum");
+		} else {
+			maiorDefesaLabel.setText("Guerreiro com maior defesa: " +
+					maiorDefesa.getNome() +
+					" | Defesa: " + maiorDefesa.getDefesa());
+		}
+
+		Mago maiorPoderMagico = gerenciador.magoMaiorPoderMagico();
+
+		if (maiorPoderMagico == null) {
+			maiorPoderMagicoLabel.setText("Mago com maior poder magico: Nenhum");
+		} else {
+			maiorPoderMagicoLabel.setText("Mago com maior poder magico: " +
+					maiorPoderMagico.getNome() +
+					" | Poder magico: " + maiorPoderMagico.getPoderMagico());
+		}
 	}
 
 	private String formatar(Personagem personagem) {
@@ -41,7 +77,7 @@ public class TelaDestaques extends JPanel {
 			return "Nenhum";
 		}
 
-		return personagem.getDadosEspecificos();
+		return personagem.toString() + personagem.getDadosEspecificos() ;
 	}
 
 }

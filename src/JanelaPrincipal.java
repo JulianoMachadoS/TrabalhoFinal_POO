@@ -1,4 +1,5 @@
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.WindowConstants;
 import java.awt.BorderLayout;
@@ -6,11 +7,13 @@ import java.awt.BorderLayout;
 //ferramentas para pegar o tamanho da tela
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.util.LinkedHashMap;
 
 public class JanelaPrincipal extends JFrame {
 
 	private GerenciadorPersonagens gerenciador;
 	private TelaDestaques telaDestaques;
+	private LinkedHashMap<String, JPanel> telas;
 
 	public JanelaPrincipal() {
 		this(new GerenciadorPersonagens());
@@ -18,6 +21,7 @@ public class JanelaPrincipal extends JFrame {
 
 	public JanelaPrincipal(GerenciadorPersonagens gerenciador) {
 		this.gerenciador = gerenciador;
+		this.telas = new LinkedHashMap<>();
 		configurarJanela();
 		montarTelas();
 	}
@@ -45,17 +49,31 @@ public class JanelaPrincipal extends JFrame {
 
 		TelaCadastro telaCadastro = new TelaCadastro(gerenciador, this::atualizarTelas);
 
+		adicionarTela("Cadastro", telaCadastro);
+		adicionarTela("Destaques", telaDestaques);
+
 		JTabbedPane abas = new JTabbedPane();
-		abas.addTab("Cadastro", telaCadastro);
-		abas.addTab("Destaques", telaDestaques);
+
+		for (String nome : telas.keySet()) {
+			abas.addTab(nome, telas.get(nome));
+		}
+
 		abas.addChangeListener(e -> atualizarTelas());
 
 		add(abas, BorderLayout.CENTER);
 		atualizarTelas();
 	}
 
+	private void adicionarTela(String nome, JPanel tela) {
+		telas.put(nome, tela);
+	}
+
 	public void atualizarTelas() {
-		telaDestaques.atualizar();
+		for (JPanel tela : telas.values()) {
+			if (tela instanceof Atualizavel) {
+				((Atualizavel) tela).atualizar();
+			}
+		}
 	}
 
 }
