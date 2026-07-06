@@ -1,4 +1,5 @@
 public enum Armas {
+    SEM_ARMA,
 
     FACA,
 
