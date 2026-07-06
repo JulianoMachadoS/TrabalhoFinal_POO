@@ -31,12 +31,17 @@ public class JanelaPrincipal extends JFrame {
 	private void configurarJanela() {
 		setTitle("Gerenciador de Personagens");
 
-		Dimension tamanhoTela = Toolkit.getDefaultToolkit().getScreenSize(); // pega as dimençoes da tela
+		Dimension tamanhoTela = Toolkit.getDefaultToolkit().getScreenSize(); // pega as dimensoes da tela
 
 		int largura = (int) (tamanhoTela.width * 0.9);
 		int altura = (int) (tamanhoTela.height * 0.9);
 
+		int larguraMinima = (int) (tamanhoTela.width * 0.5);
+		int alturaMinima = (int) (tamanhoTela.height * 0.5);
+
 		setSize(largura, altura);
+		setMinimumSize(new Dimension(larguraMinima, alturaMinima));
+
 		setLocationRelativeTo(null); // centraliza janela
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		setLayout(new BorderLayout());
