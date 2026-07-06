@@ -15,15 +15,6 @@ public class GerenciadorPersonagens {
 		}
 
 		cadastrarGuerreiro("Daniel Antonio Callegari", 8, Armas.ESPADA_LONGA, 17, 14);
-		cadastrarGuerreiro("Hank", 8, Armas.ARCO, 14, 10);
-		cadastrarGuerreiro("Eric", 6, Armas.ESCUDO, 9, 18);
-		cadastrarGuerreiro("Diana", 7, Armas.LANCA, 13, 11);
-		cadastrarGuerreiro("Sheila", 5, Armas.FACA, 8, 9);
-		cadastrarGuerreiro("Bobby", 6, Armas.PORRETE, 17, 8);
-
-		cadastrarMago("Presto", 6, ElementoMagico.AR, 35, 16);
-		cadastrarMago("Mestre dos Magos", 10, ElementoMagico.TERRA, 80, 25);
-		cadastrarMago("Vingador", 12, ElementoMagico.FOGO, 100, 32);
 	}
 
 	public void cadastrarGuerreiro(String nome, int nivel, Armas tipoArma, int forca, int defesa) {
@@ -43,13 +34,12 @@ public class GerenciadorPersonagens {
 	}
 
 	public ArrayList<Personagem> buscarPorNome(String nome) {
-		// pega todos os nomes que possuem determinado conjunto de caracteres e retorna uma lista com eles
 		ArrayList<Personagem> resultado = new ArrayList<>();
 		String filtro = nome.toLowerCase();
 
 		personagens.stream()
 				.filter(p -> p.getNome().toLowerCase().contains(filtro))
-				.forEach(p -> resultado.add(p));
+				.forEach(resultado::add);
 
 		return resultado;
 	}

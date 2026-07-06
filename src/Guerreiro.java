@@ -6,6 +6,9 @@ public class Guerreiro extends Personagem {
 
 	private int defesa;
 
+
+	//private String tipo = "G";
+
 	public Guerreiro(String nome, int nivel, Armas tipoArma, int forca, int defesa) {
 		super(nome, nivel);
 		this.tipoArma = tipoArma;

@@ -8,6 +8,8 @@ public abstract class Personagem {
 
 	private int ataque;
 
+	//private String tipo;
+
 	public Personagem(String nome, int nivel) {
 		this.nome = nome;
 		this.nivel = nivel;
@@ -58,7 +60,8 @@ public abstract class Personagem {
 		return "Nome: " + getNome() +
 				", vida: " + getVida() +
 				", Ataque: " + getAtaque() +
-				", Nível: " + getNivel();
+				", Nível: " + getNivel() +
+				"  TIPO "+getTipo();
 	}
 
 }

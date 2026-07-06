@@ -6,6 +6,8 @@ public class Mago extends Personagem {
 
 	private int poderMagico;
 
+	//private String tipo = "M";
+
 	public Mago(String nome, int nivel, ElementoMagico elemento, int mana, int poderMagico) {
 		super(nome, nivel);
 		this.elemento = elemento;
