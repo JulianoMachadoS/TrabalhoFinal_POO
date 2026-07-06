@@ -14,7 +14,14 @@ public class GerenciadorPersonagens {
 			return;
 		}
 
-		cadastrarGuerreiro("Daniel Antonio Callegari", 8, Armas.ESPADA_LONGA, 17, 14);
+		cadastrarGuerreiro("Hank", 8, Armas.ARCO, 14, 10);
+		cadastrarGuerreiro("Eric", 6, Armas.ESCUDO, 10, 18);
+		cadastrarGuerreiro("Diana", 7, Armas.LANCA, 13, 12);
+		cadastrarGuerreiro("Sheila", 5, Armas.FACA, 9, 14);
+		cadastrarGuerreiro("Bobby", 6, Armas.PORRETE, 18, 9);
+		cadastrarMago("Presto", 5, ElementoMagico.AR, 45, 18);
+		cadastrarMago("Mestre dos Magos", 10, ElementoMagico.TERRA, 90, 35);
+		cadastrarMago("Vingador", 12, ElementoMagico.FOGO, 100, 42);
 	}
 
 	public void cadastrarGuerreiro(String nome, int nivel, Armas tipoArma, int forca, int defesa) {
