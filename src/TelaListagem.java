@@ -76,18 +76,22 @@ public class TelaListagem extends JPanel {
         modeloLista.clear();
         personagensExibidos.clear();
 
-        personagens = gerenciador.listarTodos();
+        String textoFiltro = box.getText().trim();
+        String opcaoFiltro = (String) escolha.getSelectedItem();
+
+        if (textoFiltro.isEmpty()) {
+            personagens = gerenciador.listarTodos();
+        } else if (opcaoFiltro.equals("Nome")) {
+            personagens = gerenciador.buscarPorNome(textoFiltro);
+        } else {
+            personagens = gerenciador.buscarPorTipo(textoFiltro);
+        }
 
         ordenarPersonagens();
 
-        String textoFiltro = box.getText().trim().toLowerCase();
-        String opcao = (String) escolha.getSelectedItem();
-
         for (Personagem personagem : personagens) {
-            if (filtrar(personagem, textoFiltro, opcao)) {
-                personagensExibidos.add(personagem);
-                modeloLista.addElement(formatarPersonagem(personagem));
-            }
+            personagensExibidos.add(personagem);
+            modeloLista.addElement(formatarPersonagem(personagem));
         }
 
         if (modeloLista.isEmpty()) {
@@ -131,39 +135,6 @@ public class TelaListagem extends JPanel {
         }
 
         return texto;
-    }
-
-    private boolean filtrar(Personagem personagem, String texto, String opcao) {
-        if (texto.isEmpty()) {
-            return true;
-        }
-
-        switch (opcao) {
-            case "Nome":
-                return filtrarPorNome(personagem, texto);
-
-            case "Classe":
-                return filtrarPorTipo(personagem, texto);
-
-            default:
-                return true;
-        }
-    }
-
-    private boolean filtrarPorNome(Personagem p, String texto) {
-        if (p.getNome().toLowerCase().contains(texto)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    private boolean filtrarPorTipo(Personagem p, String texto) {
-        if (p.getTipo().toLowerCase().contains(texto)) {
-            return true;
-        } else {
-            return false;
-        }
     }
 
     private void limparFiltro() {
@@ -234,9 +205,8 @@ public class TelaListagem extends JPanel {
             }
         }
 
-        montarTela();
-
         JOptionPane.showMessageDialog(this, "Personagem(ns) removido(s) com sucesso.");
+        montarTela();
     }
 
 }

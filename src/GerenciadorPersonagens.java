@@ -49,6 +49,18 @@ public class GerenciadorPersonagens {
 		return resultado;
 	}
 
+	public ArrayList<Personagem> buscarPorTipo(String tipo) {
+		ArrayList<Personagem> resultado = new ArrayList<>();
+		String filtro = tipo.toLowerCase();
+
+		for (Personagem personagem : personagens) {
+			if (personagem.getTipo().toLowerCase().contains(filtro)) {
+				resultado.add(personagem);
+			}
+		}
+
+		return resultado;
+	}
 	public boolean removerPorNome(String nome) {
 		return personagens.removeIf(p -> p.getNome().equalsIgnoreCase(nome));
 	}
