@@ -64,6 +64,7 @@ public class TelaListagem extends JPanel {
 
         listaPersonagens = new JList<>(modeloLista);
         listaPersonagens.setFont(new Font("Arial", Font.PLAIN, 14));
+        listaPersonagens.setFixedCellHeight(28);
         listaPersonagens.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
 
         JScrollPane scrollPane = new JScrollPane(listaPersonagens);

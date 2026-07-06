@@ -21,14 +21,16 @@ public class TelaDestaques extends JPanel {
 	}
 
 	private void montarTela() {
-		setLayout(new GridLayout(0, 1, 12, 12));
-		setBorder(BorderFactory.createEmptyBorder(20, 40, 20, 40));
+		setLayout(new GridLayout(2, 2, 12, 12));
+    	setBorder(BorderFactory.createEmptyBorder(20, 40, 20, 40));
 
 		maiorNivelLabels = adicionarDestaque("Personagem com maior nivel");
 		maiorAtaqueLabels = adicionarDestaque("Personagem com maior ataque");
 		maiorDefesaLabels = adicionarDestaque("Guerreiro com maior defesa");
 		maiorPoderMagicoLabels = adicionarDestaque("Mago com maior poder magico");
 	}
+
+	
 
 	private JLabel[] adicionarDestaque(String titulo) {
 		JPanel painelPrincipal = new JPanel(new BorderLayout());
