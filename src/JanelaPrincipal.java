@@ -33,8 +33,8 @@ public class JanelaPrincipal extends JFrame {
 
 		Dimension tamanhoTela = Toolkit.getDefaultToolkit().getScreenSize(); // pega as dimensoes da tela
 
-		int largura = (int) (tamanhoTela.width * 0.9);
-		int altura = (int) (tamanhoTela.height * 0.9);
+		int largura = (int) (tamanhoTela.width * 0.6);
+		int altura = (int) (tamanhoTela.height * 0.6);
 
 		int larguraMinima = (int) (tamanhoTela.width * 0.5);
 		int alturaMinima = (int) (tamanhoTela.height * 0.5);
