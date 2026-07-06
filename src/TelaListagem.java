@@ -181,11 +181,6 @@ public class TelaListagem extends JPanel {
             return;
         }
 
-        if (personagensExibidos.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Nenhum personagem valido selecionado.");
-            return;
-        }
-
         int resposta = JOptionPane.showConfirmDialog(
                 this,
                 "Deseja remover os personagens selecionados?",
@@ -197,16 +192,28 @@ public class TelaListagem extends JPanel {
             return;
         }
 
-        for (int i = indicesSelecionados.length - 1; i >= 0; i--) {
-            int indice = indicesSelecionados[i];
+        int personagensRemovidos = 0;
 
-            if (indice >= 0 && indice < personagensExibidos.size()) {
-                Personagem personagem = personagensExibidos.get(indice);
-                gerenciador.removerPorNome(personagem.getNome());
+        for (int i : indicesSelecionados) {
+            if (i >= 0 && i < personagensExibidos.size()) {
+                Personagem personagemSelecionado = personagensExibidos.get(i);
+                String nomePersonagem = personagemSelecionado.getNome();
+
+                gerenciador.removerPorNome(nomePersonagem);
+                personagensRemovidos += 1;
             }
         }
 
-        JOptionPane.showMessageDialog(this, "Personagem(ns) removido(s) com sucesso.");
+        if (personagensRemovidos == 0) {
+            JOptionPane.showMessageDialog(this, "Nenhum personagem valido selecionado.");
+            return;
+        }
+
+        if (personagensRemovidos == 1) {
+            JOptionPane.showMessageDialog(this, "Personagem removido com sucesso.");
+        } else {
+            JOptionPane.showMessageDialog(this, "Personagens removidos com sucesso.");
+        }
         montarTela();
     }
 

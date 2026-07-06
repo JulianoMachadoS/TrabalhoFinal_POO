@@ -14,18 +14,10 @@ public class JanelaPrincipal extends JFrame {
 	private TelaListagem telaListagem;
 	private TelaEstatisticas telaEstatisticas;
 
-	public JanelaPrincipal() {
-		this(new GerenciadorPersonagens());
-	}
-
 	public JanelaPrincipal(GerenciadorPersonagens gerenciador) {
 		this.gerenciador = gerenciador;
 		configurarJanela();
 		montarTelas();
-	}
-
-	public GerenciadorPersonagens getGerenciador() {
-		return gerenciador;
 	}
 
 	private void configurarJanela() {
