@@ -14,8 +14,6 @@ public enum Armas {
 
     ARCO,
 
-    CAJADO,
-
     ESCUDO;
 
 }

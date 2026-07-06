@@ -11,7 +11,8 @@ public class JanelaPrincipal extends JFrame {
 
 	private GerenciadorPersonagens gerenciador;
 	private TelaDestaques telaDestaques;
-	private TelaEdicao telaEdicao;
+	private TelaListagem telaListagem;
+	private TelaEstatisticas telaEstatisticas;
 
 	public JanelaPrincipal() {
 		this(new GerenciadorPersonagens());
@@ -43,13 +44,16 @@ public class JanelaPrincipal extends JFrame {
 
 	private void montarTelas() {
 		telaDestaques = new TelaDestaques(gerenciador);
-		telaEdicao  = new TelaEdicao(gerenciador);
+		telaListagem = new TelaListagem(gerenciador);
+		telaEstatisticas = new TelaEstatisticas(gerenciador);
+
 		TelaCadastro telaCadastro = new TelaCadastro(gerenciador, this::atualizarTelas);
 
 		JTabbedPane abas = new JTabbedPane();
 		abas.addTab("Cadastro", telaCadastro);
+		abas.addTab("Personagens", telaListagem);
+		abas.addTab("Estatisticas", telaEstatisticas);
 		abas.addTab("Destaques", telaDestaques);
-		abas.addTab("Personagens", telaEdicao);
 		abas.addChangeListener(e -> atualizarTelas());
 
 		add(abas, BorderLayout.CENTER);
@@ -58,7 +62,8 @@ public class JanelaPrincipal extends JFrame {
 
 	public void atualizarTelas() {
 		telaDestaques.atualizar();
-		telaEdicao.montarTela();
+		telaListagem.montarTela();
+		telaEstatisticas.atualizar();
 	}
 
 }

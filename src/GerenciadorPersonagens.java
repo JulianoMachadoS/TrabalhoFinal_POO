@@ -44,9 +44,11 @@ public class GerenciadorPersonagens {
 		ArrayList<Personagem> resultado = new ArrayList<>();
 		String filtro = nome.toLowerCase();
 
-		personagens.stream()
-				.filter(p -> p.getNome().toLowerCase().contains(filtro))
-				.forEach(resultado::add);
+		for (Personagem personagem : personagens) {
+			if (personagem.getNome().toLowerCase().contains(filtro)) {
+				resultado.add(personagem);
+			}
+		}
 
 		return resultado;
 	}
@@ -73,20 +75,20 @@ public class GerenciadorPersonagens {
 
 	public int somaVidas() {
 		return personagens.stream()
-				.mapToInt(Personagem::getVida)
+				.mapToInt(p -> p.getVida())
 				.sum();
 	}
 
 	public double mediaNivel() {
 		return personagens.stream()
-				.mapToInt(Personagem::getNivel)
+				.mapToInt(p -> p.getNivel())
 				.average()
 				.orElse(0);
 	}
 
 	public double mediaAtaque() {
 		return personagens.stream()
-				.mapToInt(Personagem::getAtaque)
+				.mapToInt(p -> p.getAtaque())
 				.average()
 				.orElse(0);
 	}
@@ -103,7 +105,7 @@ public class GerenciadorPersonagens {
 		return personagens.stream()
 				.filter(p -> p instanceof Guerreiro)
 				.map(p -> (Guerreiro) p)
-				.mapToInt(Guerreiro::getDefesa)
+				.mapToInt(guerreiro -> guerreiro.getDefesa())
 				.average()
 				.orElse(0);
 	}

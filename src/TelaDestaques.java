@@ -30,9 +30,9 @@ public class TelaDestaques extends JPanel {
 	}
 
 	public void atualizar() {
-		maiorNivelLabel.setText("Personagem com maior nivel: " + formatar(gerenciador.personagemMaiorNivel()));
-		maiorAtaqueLabel.setText("Personagem com maior ataque: " + formatar(gerenciador.personagemMaiorAtaque()));
-		maiorDefesaLabel.setText("Guerreiro com maior defesa: " + formatar(gerenciador.guerreiroMaiorDefesa()));
+		maiorNivelLabel.setText(      "Personagem com maior nivel:  " + formatar(gerenciador.personagemMaiorNivel()));
+		maiorAtaqueLabel.setText(     "Personagem com maior ataque: " + formatar(gerenciador.personagemMaiorAtaque()));
+		maiorDefesaLabel.setText(     "Guerreiro com maior defesa:  " + formatar(gerenciador.guerreiroMaiorDefesa()));
 		maiorPoderMagicoLabel.setText("Mago com maior poder magico: " + formatar(gerenciador.magoMaiorPoderMagico()));
 	}
 
@@ -41,7 +41,7 @@ public class TelaDestaques extends JPanel {
 			return "Nenhum";
 		}
 
-		return personagem.getDadosEspecificos();
+		return personagem.toString() + personagem.getDadosEspecificos();
 	}
 
 }
