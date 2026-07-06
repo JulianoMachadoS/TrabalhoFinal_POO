@@ -111,5 +111,4 @@ public class TelaCadastro extends JPanel {
 		aoCadastrar.run();
 		JOptionPane.showMessageDialog(this, "Personagem cadastrado com sucesso.");
 	}
-
 }
