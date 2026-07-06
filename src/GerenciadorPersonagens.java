@@ -28,10 +28,6 @@ public class GerenciadorPersonagens {
 		personagens.add(new Guerreiro(nome, nivel, tipoArma, forca, defesa));
 	}
 
-	public void cadastrarGuerreiro(String nome, int nivel, String tipoArma, int forca, int defesa) {
-		cadastrarGuerreiro(nome, nivel, Armas.valueOf(tipoArma.toUpperCase()), forca, defesa);
-	}
-
 	public void cadastrarMago(String nome, int nivel, ElementoMagico elemento, int mana, int poderMagico) {
 		personagens.add(new Mago(nome, nivel, elemento, mana, poderMagico));
 	}
