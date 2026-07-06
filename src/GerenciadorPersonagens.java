@@ -137,5 +137,16 @@ public class GerenciadorPersonagens {
 				.max(Comparator.comparingInt(Mago::getPoderMagico))
 				.orElse(null);
 	}
+	public boolean nomeJaExiste(String nome) {
+		String nomeDigitado = nome.trim();
+
+		for (Personagem personagem : personagens) {
+			if (personagem.getNome().equalsIgnoreCase(nomeDigitado)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
 
 }

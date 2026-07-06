@@ -46,7 +46,7 @@ public class TelaCadastro extends JPanel {
 		manaCampo = new JSpinner(new SpinnerNumberModel(1, 0, 999, 1));
 		poderMagicoCampo = new JSpinner(new SpinnerNumberModel(1, 0, 999, 1));
 
-		adicionarCampo(gbc, 0, "Tipo", tipoCombo);
+		adicionarCampo(gbc, 0, "Classe", tipoCombo);
 		adicionarCampo(gbc, 1, "Nome", nomeCampo);
 		adicionarCampo(gbc, 2, "Nivel", nivelCampo);
 		adicionarCampo(gbc, 3, "Arma", armaCombo);
@@ -56,7 +56,7 @@ public class TelaCadastro extends JPanel {
 		adicionarCampo(gbc, 7, "Mana", manaCampo);
 		adicionarCampo(gbc, 8, "Poder magico", poderMagicoCampo);
 
-		JButton cadastrarBotao = new JButton("Cadastrar");
+		JButton cadastrarBotao = new JButton("CADASTRAR");
 		cadastrarBotao.addActionListener(e -> cadastrar());
 		gbc.gridx = 1;
 		gbc.gridy = 9;
@@ -86,12 +86,19 @@ public class TelaCadastro extends JPanel {
 
 	private void cadastrar() {
 		String nome = nomeCampo.getText().trim();
+
 		if (nome.isEmpty()) {
 			JOptionPane.showMessageDialog(this, "Informe o nome do personagem.");
 			return;
 		}
 
+		if (gerenciador.nomeJaExiste(nome)) {
+			JOptionPane.showMessageDialog(this, "Ja existe um personagem cadastrado com esse nome.");
+			return;
+		}
+
 		int nivel = (int) nivelCampo.getValue();
+
 		if ("Guerreiro".equals(tipoCombo.getSelectedItem())) {
 			gerenciador.cadastrarGuerreiro(nome, nivel, (Armas) armaCombo.getSelectedItem(),
 					(int) forcaCampo.getValue(), (int) defesaCampo.getValue());
